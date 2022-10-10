@@ -1,0 +1,40 @@
+{
+    "name": "zencorespa/ui",
+    "description": "Package to provide UI",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "ZenCoreSpA\\UI\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ZenCoreSpA\\UI\\Tests\\": "tests"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ian Torres",
+            "email": "iantorres@outlook.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ZenCoreSpA\\Authentication\\ServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "illuminate/routing": "^9",
+        "illuminate/session": "^9",
+        "illuminate/support": "^9"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9",
+        "orchestra/testbench": "^7.9"
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
