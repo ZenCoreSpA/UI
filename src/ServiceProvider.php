@@ -3,7 +3,7 @@
 namespace ZenCoreSpA\UI;
 
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
-use ZenCoreSpA\UI\Components\Button;
+use ZenCoreSpA\UI\View\Components\Button;
 
 class ServiceProvider extends BaseServiceProvider
 {
@@ -18,6 +18,8 @@ class ServiceProvider extends BaseServiceProvider
 
     public function components()
     {
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'ui');
+
         $this->loadViewComponentsAs('ui', $this->components);
     }
 }

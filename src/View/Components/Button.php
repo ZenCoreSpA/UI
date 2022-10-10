@@ -1,6 +1,6 @@
 <?php
 
-namespace ZenCoreSpA\UI\Components;
+namespace ZenCoreSpA\UI\View\Components;
 
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
