@@ -1,4 +1,4 @@
 <button {{ $attributes }}>
-    {{ $content }}
+    {{ $slot }}
 </button>
 
