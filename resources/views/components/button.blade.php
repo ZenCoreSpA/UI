@@ -1,3 +1,4 @@
-<button type="{{ $type ?? 'button' }}">
+<button {{ $attributes }}>
     {{ $content }}
 </button>
+

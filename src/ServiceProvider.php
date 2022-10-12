@@ -13,7 +13,13 @@ class ServiceProvider extends BaseServiceProvider
 
     public function boot()
     {
+        $this->loadRoutesFrom(__DIR__ . '/../routes/web.php');
         $this->components();
+        if ($this->app->runningInConsole()) {
+            $this->publishes([
+                __DIR__.'/../public/css' => public_path('zencorespa/ui'),
+            ], 'assets');
+        }
     }
 
     public function components()
