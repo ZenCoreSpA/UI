@@ -69,17 +69,8 @@
                     </div>
 
                     <div class="px-8 py-6 border-dashed border-2 border-slate-300 rounded-lg text-center">
-                        <x-ui::button
-                            class="text-slate-700 bg-white border-2 border-slate-200 font-bold px-4 py-2 rounded-md mr-1"
-                        >
-                            Cancel
-                        </x-ui::button>
-
-                        <x-ui::button
-                            class="bg-slate-700 text-white border-2 border-slate-800 font-bold px-4 py-2 rounded-md"
-                        >
-                            Create
-                        </x-ui::button>
+                        <x-ui::button class="button-light">Cancel</x-ui::button>
+                        <x-ui::button class="button-secondary">Create</x-ui::button>
                     </div>
 
                     <div class="py-6">
@@ -87,47 +78,13 @@
                     </div>
 
                     <div class="px-8 py-6 border-dashed border-2 border-slate-300 rounded-lg text-center">
-                        <x-ui::button
-                            class="bg-gradient-to-r from-sky-700 to-cyan-700 text-white border-2 border-sky-800 font-bold px-4 py-2 rounded-md"
-                        >
-                            Primary
-                        </x-ui::button>
-
-                        <x-ui::button
-                            class="bg-gradient-to-r from-slate-700 to-gray-700 text-white border-2 border-slate-800 font-bold px-4 py-2 rounded-md"
-                        >
-                            Secondary
-                        </x-ui::button>
-
-                        <x-ui::button
-                            class="bg-gradient-to-r from-emerald-700 to-teal-700 text-white border-2 border-emerald-800 font-bold px-4 py-2 rounded-md"
-                        >
-                            Success
-                        </x-ui::button>
-
-                        <x-ui::button
-                            class="bg-gradient-to-r from-rose-700 to-pink-700 text-white border-2 border-rose-800 font-bold px-4 py-2 rounded-md"
-                        >
-                            Danger
-                        </x-ui::button>
-
-                        <x-ui::button
-                            class="bg-gradient-to-r from-blue-700 to-blue-800 text-white border-2 border-blue-800 font-bold px-4 py-2 rounded-md"
-                        >
-                            Info
-                        </x-ui::button>
-
-                        <x-ui::button
-                            class="text-slate-700 bg-white border-2 border-slate-200 font-bold px-4 py-2 rounded-md mr-1"
-                        >
-                            Light
-                        </x-ui::button>
-
-                        <x-ui::button
-                            class="bg-gradient-to-r from-stone-800 to-stone-800 text-white border-2 border-stone-900 font-bold px-4 py-2 rounded-md"
-                        >
-                            Dark
-                        </x-ui::button>
+                        <x-ui::button class="button-primary">Primary</x-ui::button>
+                        <x-ui::button class="button-secondary">Secondary</x-ui::button>
+                        <x-ui::button class="button-success">Success</x-ui::button>
+                        <x-ui::button class="button-danger">Danger</x-ui::button>
+                        <x-ui::button class="button-info">Info</x-ui::button>
+                        <x-ui::button class="button-light">Light</x-ui::button>
+                        <x-ui::button class="button-dark">Dark</x-ui::button>
                     </div>
                 </div>
             </div>

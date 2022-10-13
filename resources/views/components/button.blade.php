@@ -1,4 +1,4 @@
-<button {{ $attributes }}>
+<button {{ $attributes->class('button') }}>
     {{ $slot }}
 </button>
 
