@@ -11,7 +11,7 @@ class ButtonTest extends TestCase
 
     public function test_component()
     {
-        $view = $this->blade('<x-ui::button :content="$content" />', [
+        $view = $this->blade('<x-ui::button type="button">{{ $content }}</x-ui::button>', [
             'content' => 'Hello World',
         ]);
 
@@ -21,8 +21,7 @@ class ButtonTest extends TestCase
 
     public function test_submit()
     {
-        $view = $this->blade('<x-ui::button :type="$type" :content="$content" />', [
-            'type' => 'submit',
+        $view = $this->blade('<x-ui::button type="submit">{{ $content }}</x-ui::button>', [
             'content' => 'Hello World',
         ]);
 
@@ -31,8 +30,7 @@ class ButtonTest extends TestCase
 
     public function test_button()
     {
-        $view = $this->blade('<x-ui::button :type="$type" :content="$content" />', [
-            'type' => 'button',
+        $view = $this->blade('<x-ui::button type="button">{{ $content }}</x-ui::button>', [
             'content' => 'Hello World',
         ]);
 

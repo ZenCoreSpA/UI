@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/** Layout */
+.container-sidebar {
+    @apply hidden md:fixed md:inset-y-0 md:flex md:w-64 md:flex-col
+}
+
+.container-fluid {
+    @apply flex flex-1 flex-col md:pl-64
+}
+
+.container-flex {
+    @apply flex min-h-0 flex-1 flex-col bg-slate-900
+}
+
+.container-ui {
+    @apply px-8 py-6 border-dashed border-2 border-slate-300 rounded-lg
+}
+
+/** Typography */
+.h1 {
+    @apply text-4xl font-semibold text-gray-900
+}
+
+.h2 {
+    @apply text-3xl font-semibold text-gray-900
+}
+
+.h3 {
+    @apply text-2xl font-semibold text-gray-900
+}
+
+/** Forms */
+.button {
+    @apply bg-gradient-to-r border-2 px-4 py-2 font-bold rounded-md
+}
+
+.button-primary {
+    @apply from-sky-700 to-cyan-700 text-white border-sky-800
+}
+
+.button-secondary {
+    @apply from-slate-700 to-gray-700 text-white border-slate-800
+}
+
+.button-success {
+    @apply from-emerald-700 to-teal-700 text-white border-emerald-800
+}
+
+.button-danger {
+    @apply from-rose-700 to-pink-700 text-white border-rose-800
+}
+
+.button-info {
+    @apply from-blue-700 to-blue-800 text-white border-blue-800
+}
+
+.button-light {
+    @apply from-gray-50 to-slate-50 text-slate-700 border-slate-200
+}
+
+.button-dark {
+    @apply from-stone-800 to-stone-800 text-white border-stone-900
+}
