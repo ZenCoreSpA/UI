@@ -19,8 +19,8 @@
 </head>
 <body class="antialiased">
 <div>
-    <div class="hidden md:fixed md:inset-y-0 md:flex md:w-64 md:flex-col">
-        <div class="flex min-h-0 flex-1 flex-col bg-slate-900">
+    <div class="container-sidebar">
+        <div class="container-flex">
             <div class="flex flex-1 flex-col overflow-y-auto pt-5 pb-4">
                 <h1 class="text-2xl text-white text-center font-bold">Navigation</h1>
                 <nav class="mt-5 flex-1 space-y-2 px-2">
@@ -53,31 +53,19 @@
             </div>
         </div>
     </div>
-    <div class="flex flex-1 flex-col md:pl-64">
+    <div class="container-fluid">
         <main class="flex-1">
             <div class="py-6">
                 <div class="mx-auto max-w-7xl px-4 sm:px-6 md:px-8">
-                    <h1 class="text-4xl font-semibold text-gray-900 text-center">Components</h1>
-                </div>
-                <div class="mx-auto max-w-7xl px-4 sm:px-6 md:px-8">
-                    <div class="py-8">
-                        <h1 id="buttons" class="text-3xl font-semibold text-gray-900">Buttons</h1>
-                    </div>
-
-                    <div class="py-4">
-                        <h1 id="buttons" class="text-2xl font-semibold text-gray-900">Overview</h1>
-                    </div>
-
-                    <div class="px-8 py-6 border-dashed border-2 border-slate-300 rounded-lg text-center">
+                    <h1 class="h1 text-center">Components</h1>
+                    <h1 id="buttons" class="h2 py-8">Buttons</h1>
+                    <h1 id="buttons-overview" class="h3  py-4">Overview</h1>
+                    <div class="container-ui text-center">
                         <x-ui::button class="button-light">Cancel</x-ui::button>
                         <x-ui::button class="button-secondary">Create</x-ui::button>
                     </div>
-
-                    <div class="py-6">
-                        <h1 id="buttons" class="text-2xl font-semibold text-gray-900">Actions</h1>
-                    </div>
-
-                    <div class="px-8 py-6 border-dashed border-2 border-slate-300 rounded-lg text-center">
+                    <h1 id="buttons-actions" class="h3 py-6">Actions</h1>
+                    <div class="container-ui text-center">
                         <x-ui::button class="button-primary">Primary</x-ui::button>
                         <x-ui::button class="button-secondary">Secondary</x-ui::button>
                         <x-ui::button class="button-success">Success</x-ui::button>
@@ -89,16 +77,6 @@
                 </div>
             </div>
         </main>
-    </div>
-
-    <div>
-        <h1>UI</h1>
-
-        <h2>Buttons</h2>
-
-        <h3>Colored</h3>
-
-        <x-ui::button content="Hello World" />
     </div>
 </div>
 </body>
